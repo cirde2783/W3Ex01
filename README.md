@@ -121,3 +121,43 @@ public class W3Ex06 {
         new W3Ex06().run();
     }
 }
+
+---------------
+/**
+ * Created by 452318 on 26/09/17.
+ */
+public class W307 {
+    public void run() {
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.println("Enter your height (in meters): ");
+        double height = inputScanner.nextDouble();
+        height = height * height;
+
+        System.out.println("Enter your weight (in KG): ");
+        int weight = inputScanner.nextInt();
+
+        double BMI = weight / height;
+
+        System.out.println("Your BMI is: " + BMI);
+        if (BMI < 18.5) {
+            System.out.println("Underweight");
+        }
+
+        if (BMI >=18.5 && BMI <25) {
+            System.out.println("Normal weight");
+        }
+        if (BMI >=25 && BMI < 30) {
+            System.out.println("Overweight");
+        }
+        if (BMI >30) {
+            System.out.println("Obesity");
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        new W307().run();
+    }
+}
