@@ -161,3 +161,46 @@ public class W307 {
         new W307().run();
     }
 }
+
+
+------------------------
+import java.util.Scanner;
+
+/**
+ * Created by 452318 on 26/09/17.
+ */
+public class W308 {
+    public void run() {
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.println("Input first value");
+        int number = inputScanner.nextInt();
+
+        System.out.println("Input second value");
+        int number1 = inputScanner.nextInt();
+
+        System.out.println("Input value: " + number);
+        System.out.println("Input value: " + number1);
+        if (number > number1) {
+            System.out.println("The largest value is: " + number + ".");
+
+        }
+
+        if (number1 > number) {
+            System.out.println("The largest value is: " + number1 + ".");
+        }
+
+        else {
+            System.out.println("the value are equal.");
+
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        new W308().run();
+    }
+}
+--------------------
+
