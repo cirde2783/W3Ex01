@@ -204,3 +204,27 @@ public class W308 {
 }
 --------------------
 
+import java.util.Scanner;
+
+/**
+ * Created by 452318 on 26/09/17.
+ */
+public class W3EX09 {
+    public void run() {
+        Scanner inputScanner = new Scanner (System.in);
+        System.out.println("Put in a value between 1 and 5000");
+        int value = inputScanner.nextInt();
+
+        value = value * 1000000;
+        System.out.println("The multiplied number will be: " + value);
+
+
+
+
+    }
+
+    public static void main(String[] args) {
+        new W3EX09().run();
+    }
+
+}
