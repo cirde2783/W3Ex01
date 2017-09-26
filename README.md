@@ -83,3 +83,41 @@ public class W305 {
 
 
 --------------------------------
+
+mport java.util.Scanner;
+
+public class W3Ex06 {
+    public void run() {
+        Scanner inputScanner = new Scanner(System.in);
+        System.out.println("Put your first number in");
+        int number1 = inputScanner.nextInt();
+        System.out.println("Put your second number in");
+        int number2 = inputScanner.nextInt();
+
+        int outcome = number1 + number2;
+        int outcome1 = number1 - number2;
+        int outcome2 = number2 - number1;
+        int outcome3 = number1 * number2;
+        int outcome4 = number1 / number2;
+        int outcome5 = number2 / number1;
+        int outcome6 = number1 % number2;
+        int outcome7 = number2 % number1;
+
+        System.out.println(outcome);
+        System.out.println(outcome1);
+        System.out.println(outcome2);
+        System.out.println(outcome3);
+        System.out.println(outcome4);
+        System.out.println(outcome5);
+        System.out.println(outcome6);
+        System.out.println(outcome7);
+
+
+
+
+    }
+
+    public static void main(String[] args) {
+        new W3Ex06().run();
+    }
+}
