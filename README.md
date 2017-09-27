@@ -228,3 +228,28 @@ public class W3EX09 {
     }
 
 }
+-----
+import java.util.Random;
+
+public class W3Ex13 {
+    public void run () {
+
+        Random bounds = new Random();
+
+        int Lowerbound;
+
+        for ( int x = 0 ; x < 100 ;x ++ ) {
+            Lowerbound = bounds.nextInt(6) + 1;
+
+            System.out.println(Lowerbound);
+
+        }
+
+
+
+    }
+
+    public static void main(String[] args) {
+        new W3Ex13().run();
+    }
+}
